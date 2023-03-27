@@ -1,0 +1,130 @@
+/* Общее для всего файла */
+*{
+     margin: 0;
+}
+
+span{
+    font-style: italic;
+    background-color: rgb(204, 211, 211);
+}
+
+.bold-text{
+    font-size: 18px;
+    font-color: rgb(226, 226, 236);
+
+}
+/* Меню навигации по страничкам сверху */
+.navigate{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color:rgb(241, 241, 241);
+    
+}
+.navigate>nav>ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    /* align-items: center; */
+}
+
+.navigate>nav>ul>li>a{
+    display: block;
+    margin: 2px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.2px;
+}
+
+
+/* Левый блок с навигацией */
+aside{
+    float: left;
+    width: 15%;
+    display: flex;
+}
+.aside>nav>ul{
+    list-style: none;
+    padding: 5px;
+}
+.aside>nav>ul>li{
+    margin-left: 5px;
+    padding: 2px;
+}
+.aside>nav>ul>p{
+    text-align: left;
+    color: rgb(109, 109, 109);
+    font-weight: bold;
+    
+}
+
+/* Основная страница с текстом */
+
+main{
+    float: right;
+    width: 85%;
+    margin-bottom: 20px;
+}
+.main{
+    padding-left: 20px;   
+}
+main>.main>span{
+    display: flex;
+    border-style: solid;
+    border-width: 0.5px;
+    width: 70%;
+} 
+
+main>.main>p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Правый блок с картинкой */
+.right{
+    float:right;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 5px;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+.right>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logoHTML{
+    max-width: 70px;
+}
+
+/* Список с ссылками внутри статьи */
+.spisok{
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5 px;
+    padding: 5px;
+    padding-right: 10px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.spisok>p{
+    text-align: center;
+    text-align: center;
+}
+
+
+
+@media(max-width:900px){
+    .navigate{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
